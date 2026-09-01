@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>이지해 — ERP 고객서비스 리더</title>
+<meta name="description" content="영림원소프트랩 고객가치실현팀장 이지해. ERP 개발에서 시작해 교육, PM, 영업지원을 거쳐 46명 규모 고객서비스 조직을 운영합니다.">
+<meta property="og:title" content="이지해 — ERP 고객서비스 리더">
+<meta property="og:description" content="ERP 사업의 개발, 교육, PM, 영업지원, 고객서비스를 모두 거친 22년.">
+<meta property="og:type" content="profile">
+<meta property="og:image" content="profile.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+
+<style>
+:root{
+  --ink:#17242b;
+  --ink-soft:#3d4f57;
+  --slate:#5f7178;
+  --line:#d8ded9;
+  --band:#edf1ef;
+  --accent:#2e6b62;
+  --paper:#ffffff;
+  --col:38rem;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,
+    "Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  font-size:16px;
+  line-height:1.75;
+  word-break:keep-all;
+}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+.col{max-width:var(--col)}
+
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(46,107,98,.35)}
+a:hover{border-bottom-color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+h1,h2,h3{font-family:"Noto Serif KR",serif;font-weight:500;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,6vw,2.9rem);line-height:1.25}
+h2{font-size:1.35rem;line-height:1.4}
+h3{font-size:1.06rem;line-height:1.5;font-weight:600}
+p{margin:0 0 1.1rem}
+p:last-child{margin-bottom:0}
+
+/* hero */
+.hero{padding:4.5rem 0 2.5rem}
+.hero-grid{display:grid;grid-template-columns:9.5rem minmax(0,1fr);gap:2.25rem;align-items:start}
+.photo{width:9.5rem;height:9.5rem;border-radius:50%;object-fit:cover;
+  background:var(--band);display:block}
+.hero h1{margin-bottom:.9rem}
+.role{font-size:1.06rem;color:var(--ink-soft);margin:0 0 .35rem;line-height:1.6}
+.role strong{font-weight:600;color:var(--ink)}
+.role-en{font-size:.9rem;color:var(--slate);margin:0 0 1.4rem;letter-spacing:.01em}
+.lede{font-family:"Noto Serif KR",serif;font-size:1.15rem;line-height:1.85;
+  color:var(--ink);margin:0}
+
+/* numbers */
+.figures{background:var(--band);margin-top:3rem}
+.figures-inner{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  padding:1.8rem 0}
+.fig{padding:0 1.4rem;border-left:1px solid rgba(23,36,43,.13)}
+.fig:first-child{padding-left:0;border-left:0}
+.fig dt{font-size:.83rem;color:var(--slate);margin-bottom:.3rem;line-height:1.5}
+.fig dd{margin:0;font-family:"Noto Serif KR",serif;font-size:1.5rem;
+  font-weight:600;line-height:1.25}
+.fig dd span{font-size:.95rem;font-weight:400;color:var(--ink-soft)}
+
+/* sections */
+section{padding:3.4rem 0}
+.section-head{margin-bottom:1.6rem}
+.section-head h2{margin-bottom:.4rem}
+.section-note{font-size:.9rem;color:var(--slate);margin:0}
+.rule{border:0;border-top:1px solid var(--line);margin:0}
+
+/* career */
+.career{list-style:none;margin:0;padding:0}
+.job{display:grid;grid-template-columns:8.5rem minmax(0,1fr);gap:0 2rem;
+  padding:1.9rem 0;border-top:1px solid var(--line)}
+.job:first-child{border-top:0;padding-top:.4rem}
+.when{font-size:.88rem;color:var(--slate);line-height:1.65;padding-top:.25rem}
+.when b{display:block;font-weight:600;color:var(--ink-soft);font-size:.92rem}
+.job h3{margin-bottom:.15rem}
+.job .en{font-size:.86rem;color:var(--slate);margin:0 0 .8rem}
+.job p{font-size:.97rem;color:var(--ink-soft);margin-bottom:.9rem}
+.job ul{margin:0;padding-left:1.05rem;font-size:.94rem;color:var(--ink-soft)}
+.job li{margin-bottom:.3rem;line-height:1.7}
+.job li::marker{color:var(--accent)}
+.current .when b{color:var(--accent)}
+
+/* focus / activity */
+.stack{display:grid;gap:1.4rem}
+.note{border-left:2px solid var(--accent);padding-left:1.15rem}
+.note h3{margin-bottom:.35rem}
+.note p{font-size:.97rem;color:var(--ink-soft);margin:0}
+
+.activity{list-style:none;margin:0;padding:0;font-size:.97rem}
+.activity li{display:grid;grid-template-columns:5rem minmax(0,1fr);gap:1rem;
+  padding:.75rem 0;border-top:1px solid var(--line);color:var(--ink-soft)}
+.activity li:first-child{border-top:0}
+.activity time{color:var(--slate);font-size:.9rem}
+
+/* contact */
+.contact{background:var(--band);padding:3.2rem 0}
+.contact h2{margin-bottom:.7rem}
+.contact p{color:var(--ink-soft);font-size:.97rem}
+.links{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.3rem}
+.links a{display:inline-block;border:1px solid var(--ink);border-bottom-width:1px;
+  color:var(--ink);padding:.55rem 1.1rem;border-radius:2px;font-size:.94rem}
+.links a:hover{background:var(--ink);color:var(--band)}
+
+footer{padding:2rem 0;font-size:.85rem;color:var(--slate)}
+
+@media (max-width:860px){
+  .figures-inner{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.4rem 0}
+  .fig:nth-child(3){padding-left:0;border-left:0}
+}
+@media (max-width:640px){
+  .hero{padding:3rem 0 1.5rem}
+  .hero-grid{grid-template-columns:1fr;gap:1.5rem}
+  .photo{width:7.5rem;height:7.5rem}
+  .job{grid-template-columns:1fr;gap:.6rem}
+  .when{padding-top:0}
+  .when b{display:inline;margin-right:.5rem}
+  .activity li{grid-template-columns:1fr;gap:.15rem}
+  section{padding:2.6rem 0}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <img class="photo" src="profile.jpg" alt="이지해 프로필 사진">
+      <div>
+        <h1>이지해</h1>
+        <p class="role"><strong>고객가치실현팀장</strong> · 영림원소프트랩</p>
+        <p class="role-en">Head of ERP Customer Service, Youngrimwon SoftLab</p>
+        <p class="lede col">ERP 개발자로 시작해 제품개발, 고객서비스, 개발 PM, 개발자 교육,
+        기획혁신, 영업지원과 파트너 관리까지 ERP 사업의 거의 모든 영역을 거쳤습니다.
+        지금은 46명의 고객서비스 조직을 운영합니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="figures">
+    <div class="wrap">
+      <dl class="figures-inner">
+        <div class="fig">
+          <dt>ERP 한 분야에서</dt>
+          <dd>22<span>년 2개월</span></dd>
+        </div>
+        <div class="fig">
+          <dt>운영 조직</dt>
+          <dd>5<span>개 파트 · 46명</span></dd>
+        </div>
+        <div class="fig">
+          <dt>담당 고객사</dt>
+          <dd>약 700<span>개사</span></dd>
+        </div>
+        <div class="fig">
+          <dt>월평균 문의·서비스 요청</dt>
+          <dd>4,000~5,000<span>건</span></dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <div class="wrap col">
+    <div class="section-head"><h2>지금 하는 일</h2></div>
+    <p>ERP 고객서비스를 총괄하며 5개 파트, 46명의 조직을 운영하고 있습니다.
+    약 700개 고객사를 대상으로 월평균 4,000~5,000건의 문의와 서비스 요청을 관리하며,
+    서비스 품질 향상과 처리기간 개선, 조직 운영체계 고도화, 주요 고객 이슈 대응을
+    책임집니다.</p>
+    <p>서비스 현장의 문제를 개인의 경험에만 의존하지 않고 조직의 프로세스와 지식으로
+    전환하는 데 관심이 많습니다. 연말정산 K-Bot 적용, 고객 진행상황 공개,
+    완료예정일 및 장기 미결 건 관리체계 개선을 추진했고, 지금은 축적된 서비스 데이터를
+    활용한 유사사례 검색과 고객별 지식 자산화 등 AI 기반 고객서비스 지원체계를
+    기획하고 있습니다.</p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap">
+    <div class="section-head col">
+      <h2>일하며 쌓은 관점</h2>
+      <p class="section-note">여러 역할을 옮겨 다니며 반복해서 확인한 것들입니다.</p>
+    </div>
+    <div class="stack col">
+      <div class="note">
+        <h3>경험은 프로세스가 되어야 남는다</h3>
+        <p>담당자 한 사람의 숙련도에 의존하는 서비스는 그 사람이 자리를 옮기면 사라집니다.
+        해결 과정을 기록하고 검색 가능한 형태로 만들어야 조직의 자산이 됩니다.</p>
+      </div>
+      <div class="note">
+        <h3>고객이 기다리는 시간에도 정보가 필요하다</h3>
+        <p>처리 상태와 완료예정일, 변경 사유를 고객이 직접 확인할 수 있게 하는 것만으로도
+        문의의 성격이 달라집니다. 투명성은 곧 처리량 관리입니다.</p>
+      </div>
+      <div class="note">
+        <h3>개발과 서비스는 같은 문제를 다른 시점에 본다</h3>
+        <p>개발자와 PM으로 제품을 만들어 본 경험이, 서비스 현장의 요청을 제품 개선사항으로
+        번역하는 데 가장 큰 도움이 됩니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap">
+    <div class="section-head col">
+      <h2>경력</h2>
+      <p class="section-note">영림원소프트랩 · 2004년 8월 – 현재 · 22년 2개월</p>
+    </div>
+
+    <ol class="career">
+      <li class="job current">
+        <div class="when"><b>2022.05 – 현재</b>4년 5개월</div>
+        <div>
+          <h3>고객가치실현팀장</h3>
+          <p class="en">Head of ERP Customer Service</p>
+          <p>ERP 고객서비스를 총괄하며 5개 파트, 46명의 조직을 운영합니다.
+          약 700개 고객사의 월평균 4,000~5,000건 문의와 서비스 요청을 대상으로
+          서비스 품질, 처리기간, 주요 고객 이슈, 조직 역량을 관리합니다.</p>
+          <ul>
+            <li>산업 및 업무 전문성을 고려한 5개 파트 조직 운영</li>
+            <li>연말정산 K-Bot 적용 및 반복·단순 문의의 셀프 해결 환경 구축</li>
+            <li>완료예정일, 변경 사유, 중간 피드백 및 장기 미결 건 관리체계 개선</li>
+            <li>고객의 서비스 처리상태 및 답변 이력 열람 범위 확대</li>
+            <li>개발·연구소 등 유관부서 이관 및 협업체계 개선</li>
+            <li>서비스 데이터 기반 유사사례 검색과 고객별 지식 자산화 체계 기획·추진</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="job">
+        <div class="when"><b>2019.01 – 2022.04</b>3년 4개월</div>
+        <div>
+          <h3>영업 지원 및 파트너 관리</h3>
+          <p class="en">Pre-Sales &amp; Partner Management</p>
+          <p>ERP 영업 활동을 지원하며 영업 데모, 제안서 작성, 고객 요구사항에 따른
+          제품 설계·기획 지원을 담당했습니다. 영업 소싱과 담당 인력 배정, 계약 지원 및
+          파트너사 관리를 함께 수행했습니다.</p>
+          <ul>
+            <li>ERP 영업 데모 및 제안서 작성 지원</li>
+            <li>고객 요구사항 분석과 제품 설계·기획 지원</li>
+            <li>영업 기회 소싱 및 프로젝트 담당 인력 배정</li>
+            <li>계약 관련 영업 운영 지원</li>
+            <li>파트너사 협업 및 운영 관리</li>
+            <li>영업·개발·컨설팅 조직 간 업무 조율</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="job">
+        <div class="when"><b>2015.08 – 2018.12</b>3년 5개월</div>
+        <div>
+          <h3>ERP 개발 코치 · 프로젝트 PM</h3>
+          <p class="en">ERP Development Coach &amp; Project Manager</p>
+          <p>자동차·기계 산업 고객을 대상으로 ERP 구축과 제품 개발을 지원했습니다.
+          개발 코치 및 개발 PM으로서 요구사항 분석, 개발 설계, 일정과 품질관리,
+          개발자 코칭을 담당했습니다.</p>
+          <ul>
+            <li>자동차·기계 산업 ERP 개발 코칭</li>
+            <li>고객 요구사항 분석 및 개발 설계</li>
+            <li>개발 일정과 산출물 품질관리</li>
+            <li>개발자 기술·업무 코칭</li>
+            <li>삼천리자전거 ERP 구축 프로젝트 개발 PM</li>
+            <li>파트너 사업 및 ERP 컨설팅 지원</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="job">
+        <div class="when"><b>2012.08 – 2015.08</b>3년 1개월</div>
+        <div>
+          <h3>개발역량 교육팀장 · 기획혁신</h3>
+          <p class="en">Developer Capability Development &amp; Business Innovation</p>
+          <p>사내 개발자 역량체계와 교육과정을 기획하고 신입 개발자 육성 프로그램을
+          운영했습니다. 이후 기획혁신 업무로 조직의 업무체계와 프로세스 개선을
+          지원했습니다.</p>
+          <ul>
+            <li>사내 개발자 교육역량 체계 및 교육 기획표 수립</li>
+            <li>신입 개발자 교육과정 기획 및 직접 강의</li>
+            <li>신입 개발자 1~3기 약 50명 교육 및 현업 배출</li>
+            <li>교육 운영과 개발역량 평가·관리</li>
+            <li>프로젝트 및 조직 업무 프로세스 개선</li>
+            <li>기획혁신과 부서 간 협업 지원</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="job">
+        <div class="when"><b>2004.08 – 2012.07</b>8년</div>
+        <div>
+          <h3>ERP 개발 · 제품개발 · 관리회계 서비스</h3>
+          <p class="en">ERP Development, Quality &amp; Management Accounting</p>
+          <p>ERP 개발자로 입사해 제조기업의 ERP 구축과 회계·관리회계 영역 개발을
+          담당했습니다. 이후 제품 품질관리, K-System Genuine 원가 모듈 설계·개발 PM,
+          관리회계 서비스 업무팀장을 수행했습니다.</p>
+          <ul>
+            <li>유도실업·유도전자 ERP 구축 프로젝트 개발</li>
+            <li>시바우라 메카트로닉스 ERP 구축 프로젝트 개발</li>
+            <li>K-System Genuine 원가 모듈 설계 및 개발 PM</li>
+            <li>회계·관리회계 ERP 기능 개발과 품질관리</li>
+            <li>관리회계 서비스 업무팀 운영</li>
+            <li>고객 이슈 분석 및 제품 개선사항 도출</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap col">
+    <div class="section-head"><h2>교육과 네트워크</h2></div>
+    <ul class="activity">
+      <li>
+        <time>2024 –</time>
+        <span>WINNEXT 회원. 다양한 산업의 여성 리더들과 경험과 인사이트를 나누고 있습니다.</span>
+      </li>
+      <li>
+        <time>2023</time>
+        <span>WIN 토요마티네 여성리더십 프로그램 수료</span>
+      </li>
+      <li>
+        <time>2012 – 2015</time>
+        <span>신입 개발자 1~3기 약 50명 교육 후 현업 배출</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<div class="contact">
+  <div class="wrap col">
+    <h2>연락</h2>
+    <p>고객서비스 조직 운영, 서비스 데이터의 지식 자산화, ERP 현장의 문제 해결에 대해
+    이야기 나누는 것을 언제나 환영합니다.</p>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/%EC%A7%80%ED%95%B4-%EC%9D%B4-476517261/">LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap col">이지해 · 영림원소프트랩 고객가치실현팀</div>
+</footer>
+
+</body>
+</html>
