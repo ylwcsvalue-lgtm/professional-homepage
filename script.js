@@ -46,6 +46,17 @@ style.textContent = `
             transform: translateY(0);
         }
     }
+    
+    @keyframes slideInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 `;
 document.head.appendChild(style);
 
@@ -71,24 +82,23 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Mobile menu toggle (if needed for future expansion)
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
+// Smooth color transition on load
+window.addEventListener('load', () => {
+    document.body.style.opacity = '1';
+});
 
-if (hamburger) {
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
-}
-
-// Profile action buttons
+// Interactive button effects
 document.querySelectorAll('.profile-actions .btn').forEach(btn => {
     btn.addEventListener('click', function() {
         const action = this.textContent.trim();
-        console.log(`Clicked: ${action}`);
-        // Add your action logic here
+        if (action.includes('LinkedIn')) {
+            window.open('https://linkedin.com', '_blank');
+        } else if (action.includes('연락처')) {
+            window.location.href = 'mailto:jihae.lee@example.com';
+        }
     });
 });
 
-// Console log for debugging
-console.log('Professional Homepage loaded successfully!');
+console.log('🚀 Professional Homepage loaded successfully!');
+console.log('🎨 Modern color scheme with gradient design');
+console.log('✨ 2024 Latest UI/UX trends applied');
